@@ -1,0 +1,11 @@
+<h3>Navigate to Url by Alias</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <input type="text" class="form-control" id="navigate" required [(ngModel)]="url.alias" name="navigate">
+    </div>
+
+    <button type="button" (click)="navigateToUrl()" class="btn btn-success">Navigate :D</button>
+  </form>
+</div>

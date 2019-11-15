@@ -1,0 +1,20 @@
+<h2>Url Details</h2> 
+
+<hr/>
+<div *ngIf="url">
+  <div>
+    <label><b>Alias: </b></label> {{url.alias}}
+  </div>
+  <div>
+    <label><b>Url Curta: </b></label> {{url.shortUrl}}
+  </div>  
+  <div>
+    <label><b>Url: </b></label> {{url.longUrl}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Url List</button><br>
+
+
